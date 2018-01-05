@@ -1,0 +1,17 @@
+<package>
+  <name>rosabridge_msgs</name>
+  <version>0.1.1</version>
+  <description>Abridged messages for proxy.</description>
+  <author>Chad Attermann</author>
+  <maintainer email="chad@ecostechnologies.com">Chad Attermann</maintainer>
+  <license>BSD</license>
+  <url>https://github.com/ecostech/rosabridge.git</url>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+</package>

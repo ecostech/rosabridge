@@ -1,0 +1,10 @@
+<launch>
+  <!-- proxy for expanding abbreviated imu arduino node into full node -->  
+  <!-- subscribes to /rosabridge/imu abbreviated topic with base_imu_link frame -->
+  <!-- publishes /imu/data topic with base_imu_link frame -->
+  <arg name="param" default="value" />
+  <node pkg="rosabridge_server" type="imu_proxy_node" name="imu_proxy_node" output="screen">
+    <!-- optionally override received imu frame -->
+    <param name="imu_frame" value="" />
+  </node>
+</launch>

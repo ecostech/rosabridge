@@ -1,0 +1,15 @@
+<launch>
+  <!-- proxy for expanding abbreviated odom arduino node into full node -->  
+  <!-- subscribes to /rosabridge/odom abbreviated topic with base_link frame -->
+  <!-- publishes /odom topic with base_link frame -->
+  <!-- broadcasts odom->base_link transform -->
+  <arg name="param" default="value" />
+  <node pkg="rosabridge_server" type="odom_proxy_node" name="odom_proxy_node" output="screen">
+    <!-- enable broadcast of odom tf -->
+    <param name="pub_odom_tf" value="true" />
+    <!-- optionally override received odom frame -->
+    <param name="odom_frame" value="" />
+    <!-- optionally override received base frame -->
+    <param name="base_frame" value="" />
+  </node>
+</launch>

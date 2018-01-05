@@ -1,0 +1,18 @@
+<package>
+  <name>rosabridge</name>
+  <version>0.1.1</version>
+  <description>Metapackage for core of rosabridge.</description>
+  <author>Chad Attermann</author>
+  <maintainer email="chad@ecostechnologies.com">Chad Attermann</maintainer>
+  <license>BSD</license>
+  <url>https://github.com/ecostech/rosabridge.git</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>rosabridge_msgs</run_depend>
+  <run_depend>rosabridge_server</run_depend>
+
+  <export>
+   <metapackage/>
+  </export>
+</package>
