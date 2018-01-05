@@ -1,6 +1,6 @@
 # rosabridge
 
-ROS proxy node to expand and relay abridged messages received over bandwidth limited connections.
+ROS proxy nodes to expand and relay abridged messages received over bandwidth limited connections.
 
 Useful for resource limited devices like arduino or anything using rosserial to be able to publish messages that may otherwise be too large or bandwidth intensive to publish.
 
@@ -19,7 +19,7 @@ Sample Arduino code in rosabridge_arduino/sketchbook.
 Custom messages in rosabridge_msgs are not yet built for Arduino by catkin.  If changed then rebuild headers manually:
 
 ```
-rosrun rosserial_client make_library.py ~/sketchbook/libraries rosabridge_msgs
+rosrun rosserial_arduino make_libraries.py ~/sketchbook/libraries
 ```
 
 ## Authors
