@@ -15,6 +15,7 @@ add_message_files(FILES
                   Imu.msg
                   ImuCovariances.msg
                   Duplex.msg
+                  MagneticField.msg
                  )
 
 add_service_files(FILES
