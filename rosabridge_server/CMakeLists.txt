@@ -18,12 +18,12 @@ include_directories(
 add_executable(${PROJECT_NAME}_odom_proxy_node src/odom_proxy_node.cpp)
 target_link_libraries(${PROJECT_NAME}_odom_proxy_node ${catkin_LIBRARIES})
 set_target_properties(${PROJECT_NAME}_odom_proxy_node PROPERTIES OUTPUT_NAME odom_proxy_node PREFIX "")
-#add_dependencies(${PROJECT_NAME}_odom_proxy_node rosabridge_msgs_gencpp)
+add_dependencies(${PROJECT_NAME}_odom_proxy_node rosabridge_msgs_gencpp)
 
 add_executable(${PROJECT_NAME}_imu_proxy_node src/imu_proxy_node.cpp)
 target_link_libraries(${PROJECT_NAME}_imu_proxy_node ${catkin_LIBRARIES})
 set_target_properties(${PROJECT_NAME}_imu_proxy_node PROPERTIES OUTPUT_NAME imu_proxy_node PREFIX "")
-#add_dependencies(${PROJECT_NAME}_imu_proxy_node rosabridge_msgs_gencpp)
+add_dependencies(${PROJECT_NAME}_imu_proxy_node rosabridge_msgs_gencpp)
 
 install(
   TARGETS ${PROJECT_NAME}_odom_proxy_node ${PROJECT_NAME}_imu_proxy_node
